@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+    border: 1px solid black;
+    position: absolute;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 43% 2% 30% 25%;
+    grid-template-rows: repeat(5, 20vh);
+}
+
+#left_block{
+    background: white;
+    grid-area: 1/1/5/3;
+}
+
+#picture {
+    background-color: black;
+    grid-column: 3/6;
+    grid-row: 1/5;
+    color: white;
+}
+
+#facts {
+    background-color: cadetblue;
+    grid-column: 2/4;
+    grid-row: 4/6;
+}
+#more {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
