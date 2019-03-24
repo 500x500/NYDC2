@@ -13,28 +13,77 @@ header {
 
 main{
     display: grid;
-    grid-template-columns: 43% 2% 30% 25%;
+    grid-template-columns: 43% 2% 27.5% 27.5%;
     grid-template-rows: repeat(5, 20vh);
 }
 
-#left_block{
+#information{
     background: white;
-    grid-area: 1/1/5/3;
+    grid-area: 3/1/5/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn {
+    grid-row: 5/6;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-self: center;
+    grid-gap: 0.8em;
 }
 
+.btn button{
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    cursor: pointer;
+    background: #ddd;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.48);
+    margin: 0;
+}
+.btn button:hover{
+    border: 2px solid rgba(0, 0, 0, 0.57);
+}
+
+
 #picture {
-    background-color: black;
+    background-color: gray;
     grid-column: 3/6;
     grid-row: 1/5;
     color: white;
 }
 
 #facts {
-    background-color: cadetblue;
+    background-color: black;
     grid-column: 2/4;
     grid-row: 4/6;
+    color: white;
 }
 #more {
     grid-column: 4/5;
     grid-row: 5/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    cursor: pointer;
+    border: 1px solid gray;
+
+}
+
+ul{
+    display: none;
+    cursor: pointer;
+}
+
+.openMenu {
+    background: black;
+    opacity: 0.6;
+    display: grid;
+    color: white;
+
 }
